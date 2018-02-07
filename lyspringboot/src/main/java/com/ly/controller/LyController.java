@@ -44,10 +44,9 @@ public class LyController {
         //A
         lyService.del(id);
 
-        //B
-        return success;
 
-        //C
+        return success;
+        
 
     }
 
