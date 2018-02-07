@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"></meta>
+    <title>zhijieshagua</title>
+</head>
+<body>
+
+<table border="1px">
+
+    <tr>
+
+    <th>姓名</th>
+        <th>年龄</th>
+        <th>班级</th>
+        <th>学号</th>
+    </tr>
+
+<tr th:each="ly:${lys}">
+
+    <td th:text="${ly.name}"></td>
+    <td th:text="${ly.age}"></td>
+    <td th:text="${ly.classId}"></td>
+    <td th:text="${ly.id}"></td>
+
+</tr>
+
+</table>
+
+
+
+
+</body>
+</html>
