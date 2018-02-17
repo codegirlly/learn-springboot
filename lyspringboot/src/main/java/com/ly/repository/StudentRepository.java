@@ -6,9 +6,9 @@ import org.springframework.data.jpa.repository.Query;
 
 import java.util.List;
 
-public interface StudentRepository extends JpaRepository<StudentEntity,Long>{
+public interface StudentRepository extends JpaRepository<StudentEntity,Long> {
 
-        @Query
-        List<StudentEntity> findAllByClassId(Integer classId);
+    @Query
+    List<StudentEntity> findAllByClassId(Integer classId);
 
 }

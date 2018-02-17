@@ -62,7 +62,7 @@ public class LyController {
     @RequestMapping("/findall")
     String findAll(String classId,Model model){
 
-        model.addAttribute("lys",lyService.findAll(classId));
+        model.addAttribute("lys",lyService.find(classId));
         return "/list";
 
     }
