@@ -1,4 +1,4 @@
-package test.practice;
+package com.ly.practice;
 
 public class Qiuzhi {
 

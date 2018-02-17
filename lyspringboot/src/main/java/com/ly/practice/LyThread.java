@@ -1,4 +1,4 @@
-package test;
+package com.ly.practice;
 
 public class LyThread {
 

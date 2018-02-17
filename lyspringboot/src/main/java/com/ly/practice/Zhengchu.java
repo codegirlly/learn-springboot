@@ -1,4 +1,4 @@
-package test.practice;
+package com.ly.practice;
 
 /**
  * 能被357整除的数
