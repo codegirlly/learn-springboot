@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"></meta>
+    <title>方志杰小傻瓜</title>
+</head>
+<body>
+<table border="0.5px">
+    <tr>
+        <th>qq号：</th>
+        <th>姓名：</th>
+        <th>年龄：</th>
+        <th>性别：</th>
+        <th>QQ分组：</th>
+    </tr>
+    <tr th:each="ly:${lns}">
+        <td th:text="${ly.qqId}"></td>
+        <td th:text="${ly.qqName}"></td>
+        <td th:text="${ly.qqAge}"></td>
+        <td th:text="${ly.qqSex}"></td>
+        <td th:text="${ly.qqGroupId}"></td>
+    </tr>
+</table>
+</body>
+</html>

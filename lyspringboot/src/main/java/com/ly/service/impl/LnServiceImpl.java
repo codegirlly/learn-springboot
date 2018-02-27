@@ -6,6 +6,8 @@ import com.ly.service.LnService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class LnServiceImpl implements LnService {
 
@@ -21,5 +23,19 @@ private QqRepository qqRepository;
         qe.setQqSex(usersex);
         qe.setQqGroupId(Integer.valueOf(usergroupid));
         qqRepository.save(qe);
+    }
+
+    @Override
+    public QqEntity findqq(String usergroupid) {
+
+        return qqRepository.findOne(Integer.valueOf(usergroupid));
+    }
+
+    @Override
+    public List<QqEntity> findAll(String usergroupid){
+
+      return qqRepository.findAllByQqGroupId(Integer.valueOf(usergroupid));
+
+
     }
 }

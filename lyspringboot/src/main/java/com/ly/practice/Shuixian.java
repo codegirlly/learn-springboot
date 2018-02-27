@@ -22,7 +22,7 @@ public class Shuixian {
         int x = 0;
         while(temp!=0){
 
-             x = temp%10;
+            x = temp%10;
             temp = temp/10;
             sum += x*x*x;
         }
@@ -31,6 +31,4 @@ public class Shuixian {
         }
 
     }
-
-
 }
