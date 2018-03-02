@@ -30,4 +30,14 @@ public class DiGui {
       //  System.out.println(DiGui.fn(7));
         System.out.println(DiGui.plus(100));
     }
+
+    public static int sum(int num){
+
+        if(num==1){
+            return 1;
+        }else {
+            return num+sum(num-1);
+        }
+
+    }
 }

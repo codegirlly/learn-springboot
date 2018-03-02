@@ -38,7 +38,7 @@ public class LnController {
     QqEntity findqq(String userid){
         return lnService.findqq(userid);
     }
-    
+
     @RequestMapping("/findgroup")
     String findgroup(String usergroupid, Model model){
         model.addAttribute("lns",lnService.findAll(usergroupid));
