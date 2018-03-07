@@ -1,4 +1,6 @@
-package com.ly.practice;
+package com.ly.practice.ThreadTest;
+
+import com.ly.practice.LyText;
 
 public class LyThread {
 
