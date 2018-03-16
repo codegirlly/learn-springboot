@@ -1,4 +1,4 @@
-package com.ly.practice;
+package com.ly.practice.fanxing;
 
 public class Qiuzhi {
 

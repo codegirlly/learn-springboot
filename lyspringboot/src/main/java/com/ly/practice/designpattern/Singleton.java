@@ -2,13 +2,18 @@ package com.ly.practice.designpattern;
 
 public class Singleton {
 
-    private static Singleton singleton;
+    private static  Singleton singleton ;
 
     private Singleton(){}
 
     public static Singleton getInstance(){
+
         if(singleton == null){
-            return new Singleton();
+            synchronized (Singleton.class){
+                if(singleton == null){
+                    singleton = new Singleton();
+                }
+            }
         }
         return singleton;
     }
